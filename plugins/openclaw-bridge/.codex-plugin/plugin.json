@@ -1,6 +1,6 @@
 {
   "name": "openclaw-bridge",
-  "version": "0.1.0+codex.20260926194749",
+  "version": "0.1.0+codex.20260926195556",
   "description": "Connect Codex with your OpenClaw agent to debug behavior, refine personalizations, and collaborate on tests and acceptance through an existing local CLI or SSH connection.",
   "author": {
     "name": "Piotr Durlej",
@@ -24,6 +24,11 @@
       "Debug this OpenClaw behavior with my agent: compare its feedback with the code, propose a fix, and verify it with tests and a follow-up example.",
       "Help me build an OpenClaw personalization: consult my agent about available preferences, define acceptance examples, and test the change.",
       "Ask my OpenClaw agent to review this proposed change for missing acceptance cases, then discuss the test results and sample outputs."
-    ]
+    ],
+    "websiteURL": "https://github.com/pdurlej/codex-openclaw",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png",
+    "logoDark": "./assets/icon.png",
+    "brandColor": "#FF7056"
   }
 }
