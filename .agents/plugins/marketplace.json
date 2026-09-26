@@ -1,0 +1,20 @@
+{
+  "name": "codex-openclaw",
+  "interface": {
+    "displayName": "Codex Openclaw"
+  },
+  "plugins": [
+    {
+      "name": "openclaw-bridge",
+      "source": {
+        "source": "local",
+        "path": "./plugins/openclaw-bridge"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
