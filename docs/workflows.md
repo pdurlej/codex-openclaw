@@ -2,6 +2,8 @@
 
 # Workflows and example prompts
 
+See [a real completed feedback loop](real-example.md): we used the bridge to review and improve this repository’s README.
+
 ### Debug OpenClaw with Codex
 
 When your agent behaves differently from what you intended, let Codex compare the

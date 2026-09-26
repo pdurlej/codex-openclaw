@@ -25,22 +25,29 @@ copy-pasting every question and answer between apps.
 | --- | --- | --- |
 | Investigate unexpected behavior, compare examples, and follow up after a fix. | Build prompts, skills, and workflows around how you want your assistant to behave. | Ask your agent for edge cases and feedback on real test results. |
 
-## Try a conversation
+## A real feedback loop
 
-> Ask my OpenClaw agent what a good daily-planning response should look like.
-> Use its feedback to propose three acceptance examples for this project.
+We used the bridge to ask an OpenClaw agent to review this very README.
 
-**Ask → collect feedback → build and test → follow up.**
+**Before:** “One conversation away” — but the setup still felt like a long checklist.
+**Agent feedback:** make the first run four clear steps and explain what context the agent can see.
+**After:** a four-step guide, a context note, and [the actual exchange with verification results](docs/real-example.md).
 
-Replies come back into Codex, and follow-ups stay in the same bridge conversation.
-You keep the final say on changes and acceptance.
+**Ask → collect feedback → improve → verify → follow up.**
+
+Want to try it? Ask Codex: *“Consult this change with my OpenClaw agent and suggest three acceptance cases.”*
 
 ## Get started
 
-You need **Codex with plugin support, Python 3.10+, and a working OpenClaw Gateway**.
-Connect locally or through an existing SSH setup; your connection settings stay local.
+Already running OpenClaw? **[Your first conversation in four steps →](docs/getting-started.md)**
 
-**[Install and send your first question →](docs/getting-started.md)**
+Get the plugin → connect your agent → check and install → ask.
+You need Codex with plugin support, Python 3.10+, and a working Gateway.
+
+**What does your agent see?** The context Codex sends with the question, plus what
+its own memory and tools can access. It does not automatically share your Codex
+chat or see every channel and deployment. Choose what to send; verify the real
+user path separately. [Context and privacy →](docs/reference.md#permissions-and-privacy)
 
 <sub>v1 conversations start in Codex. Agent feedback complements real tests.
 [How it works, permissions, and costs](docs/workflows.md#the-feedback-loop).</sub>
