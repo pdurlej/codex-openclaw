@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "openclaw-bridge": {
+      "type": "stdio",
+      "command": "python3",
+      "args": [
+        "${PLUGIN_ROOT}/scripts/openclaw_bridge.py"
+      ],
+      "cwd": "${PLUGIN_ROOT}"
+    }
+  }
+}
