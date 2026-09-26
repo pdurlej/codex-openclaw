@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "openclaw-bridge",
-  "version": "0.1.0",
-  "description": "Configurable Codex conversations with OpenClaw over an existing local CLI or SSH connection.",
+  "version": "0.1.0+codex.20260926194749",
+  "description": "Connect Codex with your OpenClaw agent to debug behavior, refine personalizations, and collaborate on tests and acceptance through an existing local CLI or SSH connection.",
   "author": {
     "name": "Piotr Durlej",
     "url": "https://github.com/pdurlej"
@@ -14,17 +14,17 @@
     "com.openai": {
       "interface": {
         "displayName": "OpenClaw Bridge",
-        "shortDescription": "Talk to your OpenClaw agent from Codex",
-        "longDescription": "Ask questions, continue conversations, and consult plans through your existing local OpenClaw CLI or private SSH connection. Connection settings stay outside the plugin. Conversations start in Codex.",
+        "shortDescription": "Debug, personalize, and test OpenClaw with Codex",
+        "longDescription": "Bring your coding agent and your personal OpenClaw agent into the same feedback loop. Codex can ask about unexpected behavior, discuss new personalizations, and collect feedback on test cases and sample outputs. Follow up in the same conversation without manually relaying every reply. Connect through your existing local OpenClaw CLI or SSH setup; personal settings stay local. Conversations start in Codex. Agent feedback supports acceptance alongside real tests; it is not proof that a deployed workflow passed.",
         "developerName": "Piotr Durlej",
         "category": "Productivity",
         "capabilities": [
           "Interactive"
         ],
         "defaultPrompt": [
-          "Ask my OpenClaw agent about this project.",
-          "Consult this plan with my OpenClaw agent.",
-          "Follow up on my OpenClaw agent’s last answer."
+          "Debug this OpenClaw behavior with my agent: compare its feedback with the code, propose a fix, and verify it with tests and a follow-up example.",
+          "Help me build an OpenClaw personalization: consult my agent about available preferences, define acceptance examples, and test the change.",
+          "Ask my OpenClaw agent to review this proposed change for missing acceptance cases, then discuss the test results and sample outputs."
         ]
       }
     }
